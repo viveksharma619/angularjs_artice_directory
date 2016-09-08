@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis';
+#search_box{
+    border: 1px solid #4285f4;
+    padding: 50px;
+    margin-top: 100px;
+}
+.text_ctn{
+    font-family: 'Dosis', sans-serif;
+    padding: 10px;
+    border: 1px solid #ff7600;
+    color: #ff7600;
+    margin: 10px;
+    font-size: 20px;
+}
+a{
+    background: #ff7600 !important;
+}
+.result_ctn{
+    border: 1px solid rgba(66, 133, 244, 0.36); 
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+h3{
+      font-family: 'Dosis', sans-serif;
+}
+span{
+    margin-right: 50px;
+}
+input[type=date], input[type=datetime-local]{
+    width: 75%;
+}

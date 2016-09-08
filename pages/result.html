@@ -1,0 +1,71 @@
+<!--
+<div class='md-padding' layout="row" layout-wrap>
+    <div flex-xs flex-gt-xs="33" layout="column">
+          <md-card ng-repeat="news in result.data.response.docs">
+            <md-card-header>
+              <md-card-header-text>
+                <span class="md-title">{{ news.headline.main }}</span>
+              <span class="md-subhead">{{ news.headline.content_kicker }}</span>
+              </md-card-header-text>
+                <md-card-actions layout="row" layout-align="center center">
+                      <md-button href="{{ news.web_url}}" class ="md-warn"> See more </md-button>
+                </md-card-actions>
+            </md-card-header>
+        <img ng-src="http://www.nytimes.com/{{news.multimedia[1].url}}" sr-fallback="http://dummyimage.com/600x400/ff7b00/ffffff&text=Angular+Material" />
+   
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Description</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p>
+                {{ news.lead_paragraph }}
+              </p>
+            </md-card-content>
+          </md-card>
+    </div>
+</div>
+
+<div >
+   <div ng-repeat="news in result.data.response.docs">
+        <div layout="row">
+            <div layout="column">
+                <h2 class="md-title">{{ news.headline.main }}</h2>
+                <p class="md-subhead">{{ news.headline.content_kicker }}</p>
+            </div>
+             <md-button href="{{ news.web_url}}" class ="md-warn"> See more </md-button>
+        </div>   
+        <img ng-src="http://www.nytimes.com/{{news.multimedia[1].url}}" sr-fallback="http://dummyimage.com/600x400/ff7b00/ffffff&text=Angular+Material" />
+        <p> {{ news.lead_paragraph }}</p>
+    </div>
+</div>
+
+<!--
+<md-grid-list md-cols="10" md-row-height="fit" style="height: 400px;">
+  <md-grid-tile ng-repeat="news in result.data.response.docs" md-colspan="2">
+      <md-grid-tile-header>
+    <h3>{{ news.headline.main }}</h3>
+  </md-grid-tile-header>
+    <img ng-src="http://www.nytimes.com/{{news.multimedia[1].url}}" sr-fallback="http://dummyimage.com/600x400/ff7b00/ffffff&text=Angular+Material" />
+     <p class="md-subhead">{{ news.headline.content_kicker }}</p>
+   <md-grid-tile-footer>
+     <md-button href="{{ news.web_url}}" class ="md-warn"> See more </md-button>
+  </md-grid-tile-footer>
+  </md-grid-tile>
+</md-grid-list>
+-->
+    <div class="container">
+        <div class="row result_ctn" ng-repeat="news in result.data.response.docs">
+            <div class="col-md-10">
+            <h3>{{ news.headline.main }}</h3> 
+            </div>
+            <div class="col-md-2">
+            <a href = "{{ news.web_url}}" class="btn btn-warning" target="_blank">Read More</a>   
+            </div>
+            <hr>
+            <h5>{{ news.headline.content_kicker }}</h5> 
+            <p>{{ news.lead_paragraph }}</p>
+            
+        </div>
+    </div>

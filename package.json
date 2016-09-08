@@ -1,0 +1,20 @@
+{
+  "name": "article_directory",
+  "version": "1.0.0",
+  "description": "\u001b[2~\u001b[2~App made on AngularJS that enables user to search through the NYT directory of articles from Sept,18 1851 to today.",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "momentjs": "^1.1.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

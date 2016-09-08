@@ -1,0 +1,22 @@
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+    
+<div class="text_ctn">
+    <h2>Search through the NYT directory of articles from Sept,18 1851 to today.</h2>
+</div>
+<div id="search_box">
+    <div ng-cloak >
+        <div class="md-form">
+            <i class="fa fa-search prefix"></i>
+            <input type="text" id="formSearch" class="form-control"  ng-model="home.q">
+            <label for="formSearch">Enter your search keyword here..</label>
+        </div>  
+        <span>Start Date:</span> <input ng-model="home.begin_date" type="date" name="begindate">
+        <br>
+        <span>End Date:</span><input ng-model="home.end_date" type="date" name="enddate">
+        <br>
+        <button class="btn btn-warning" style="width:100%; margin-top:30px" ng-click="home.sendData()">Search</button>
+    </div> 
+</div>
+</div>
+</div>
