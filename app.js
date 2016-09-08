@@ -32,8 +32,8 @@ myApp.service('searchService', function($resource){
 myApp.controller('homeController', function($state){
     var home  = this;
     home.q = null;
-    home.begin_date = new Date();
     home.end_date = new Date();
+    home.begin_date = new Date();
     home.page = 1;
   
     home.sendData = sendData;
